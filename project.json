@@ -1,0 +1,24 @@
+{
+	"description" : "原画作者LIN+\n图片id=58561850\n若有侵权请联系diorsziyue@outlook.com删除。\n\nGirl's Frontline AR-15 M4 SOPMOD II 少女前线\n\n-------------------！右上角打开BGM!Background Music Player is on the up right corner！-------------------",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.054901960784313725 0.40784313725490196 0.5058823529411764"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Girl's Frontline Ultimatum AR-15 M4 SOPMOD II 少女前线 Interactive Webpage",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 1214869840
+}
