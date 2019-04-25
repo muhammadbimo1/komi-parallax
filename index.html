@@ -1,8 +1,7 @@
 <!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>3D Komi</title>
 
 
     <style>
@@ -63,32 +62,38 @@
 
     </style>
     </head>
+	<br>
+	<br>
+	<br>
 
 
-<body style= "position:fixed;top:0;bottom:0;left:0;right:0;contain;text-align: center;vertical-align: middle;display: inline-block;max-width:50%;max-height:80%;height:auto;" class>
-<div id="Main" style="overflow-x:visible;overflow-y:visible;object-fit: contain;text-align: center;vertical-align: middle;display: inline-block;max-width:50%;height:auto;">
+<body style="display:flex;flex-direction:column;justify-content:center;overflow:hidden"scroll="no">
+<div></div>
+<div id="Main" style="display:flex;flex-direction:column;justify-content:center;overflow:hidden;object-fit: contain;text-align: center;display: inline-block;margin:0;width: 100%;height:120%" >
         <ul id="scene"
-            data-calibrate-x="false"
-            data-calibrate-y="false"
+            data-calibrate-x="true"
+            data-calibrate-y="true"
             data-invert-x="false"
             data-invert-y="false"
             data-limit-x="false"
             data-limit-y="false"
-            data-scalar-x="10"
-            data-scalar-y="15"
+            data-scalar-x="2"
+            data-scalar-y="2.5"
             data-friction-x="0.2"
             data-friction-y="0.2"
-            data-origin-x="-2"
-            data-origin-y="-2">
+            data-origin-x="0.5"
+            data-origin-y="0.5">
          
          
-            <li class="layer" data-depth="0.7"><img id = "background" src="images/4.png" height="120%"></li>
-            <li class="layer" data-depth="0.8"><img id = "background" src="images/3.png" height="120%"></li>
-            <li class="layer" data-depth="0.9"><img id = "cloud" src="images/2.png" height="120%"></li>
-            <li class="layer" data-depth="0.92"><img id = "light"src="images/1.png" height="128%"></li>
+            <li class="layer" data-depth="0.75"><img id = "far" src="images/4.png" height="80%"></li>
+            <li class="layer" data-depth="0.82"><img id = "near" src="images/3.png" height="80%"></li>
+            <li class="layer" data-depth="0.88"><img id = "chara" src="images/2.png" height="80%"></li>
+            <li class="layer" data-depth="0.92"><img id = "frame"src="images/1.png" height="80.8%">
+			<li class="layer" data-depth="1"><img id = "frame"src="images/0.png" height="80.8%"></li>
+
 
         </ul>
-
+		
 
 </div>
         <script src="js/ThreeCanvas.js"></script>
@@ -97,15 +102,9 @@
         <script src="js/jquery.parallax.js"></script>       
 <script>
     $(document).ready(function(){
-        $("#music").fadeTo("fast",0.0);
         $("button").click(function(){
         });
-        $("#music").hover(function () {
-                $("#music").fadeTo("fast",1);
-        }, function () {
-                $("#music").fadeTo("fast",0.0);
 
-        });
         $('#scene').parallax();
     });
 </script>
@@ -113,4 +112,9 @@
 
 
 </body>
+<footer style="position:absolute;bottom:0;width:100%;height:3.5rem">
+  <p>『古見さんは、コミュ症です。』 by: <a href="https://twitter.com/ooodaaaatooo">
+  オダトモヒト</a>.</p>
+  <p> </p>
+</footer>
 </html>
